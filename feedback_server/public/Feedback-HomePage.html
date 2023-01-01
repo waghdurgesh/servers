@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <script>
+
+            function homepage(){
+                window.open("Feedback.html");
+            }
+            function submitusername(){
+                    var username=document.getElementById("uname").value;
+                    var set="3"
+                    if(username != ""){
+                        if(username == set){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,2000);
+                        }else{
+                            document.getElementById("emailnotification").innerHTML="Please Enter Valid Username!";
+                            document.getElementById("uname").focus();
+                        }
+                    }else{
+                        document.getElementById("emailnotification").innerHTML="Enter Your Username!";
+                        document.getElementById("uname").focus();
+                    }
+            }
+        </script>
+        <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #copyright{
+            color: dimgray;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: small;
+            margin-top: 100%;
+            border: 1px solid black;
+            height: 40px;
+            padding-top: 100px;
+        }
+        #middlefieldset{
+            height: 200px;
+            width: 350px;
+            border:1.5px solid rgb(0, 71, 177);
+            border-radius: 4px;
+            /* box-shadow: 3px 3px 3px rgba(20,20,20,0.7); */
+        }       
+        
+        #footer{ 
+            position: static;
+            color: red;
+            font-size: large;
+            border:.8px solid black; 
+            height: 39px; 
+            padding-top: 100px;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }   
+        #emailnotification{ color: red;
+            font-size: large;
+            height: 5px; 
+            padding-top: 10px;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        } 
+        #uname{
+            background-color: rgb(218, 248, 250);
+            border-radius: 5px;
+            width: 300px;
+            height: 35px;
+            border: 1px solid #ccc;
+            margin-left: 100px;
+            margin-top: 8px;
+        }
+        #submituname{
+            width: 200px;
+            padding: 10px 0;
+            border: 0px solid;
+            margin: 5px;
+            margin-left: 150px;
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            transition: 0.3s linear;
+            transition: 0.3s linear;
+            background: #999;
+            box-shadow: 2px 2px 2px rgba(20,20,20,0.7);
+            box-shadow: 2px 2px 2px rgba(20,20,20,0.7);
+        }
+        #submituname:hover{
+            background-color: rgb(0, 71, 177);
+        }
+        #uname:hover{
+            background-color: white;
+        }
+        #caption{
+            margin: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            font-weight: lighter;
+            text-shadow: 0.1px 0.1px 0.1px;
+            margin-bottom: 20px;
+        }
+    </style>
+    </head>
+    <body style="background-color:#F0F0F0">
+
+        <!-- First Image -->
+        <img
+            src="https://actsfeedback.cdac.in/feedbackSystem/images/Header.jpg"
+            id="head-img" width="100%">
+        <marquee behavior="" direction=""><h4 style="color: red;">Demo Website By Durgesh- Only For Educational
+            Purpose !! All rights reserved to © C-DAC</h4> </marquee>
+        <!-- Middle field -->
+
+        <div id="instructionpop">
+            <table>
+                <tbody><tr>
+                        <td><b>General information</b></td>
+                    </tr>
+                    <tr>
+                        <td>1.C-DAC has a feedback system, which is
+                            made
+                            accessible
+                            to all the students during the progress
+                            of each
+                            module.</td>
+                    </tr>
+                    <tr>
+                        <td>2.The feedback of faculty is taken for
+                            all the
+                            modules
+                            through this feedback system.</td>
+                    </tr>
+                    <tr>
+                        <td>3.The feedback process is scheduled by
+                            the
+                            respective
+                            centre and the url for the same is
+                            shared with the
+                            students.</td>
+                    </tr>
+                    <tr>
+                        <td>4.The feedback schedule is categorised
+                            as Mid module
+                            and End module. The frequency of Mid
+                            Module feedback
+                            ranges
+                            from 3 to 5 times, depending on the
+                            duration of the
+                            respective
+                            modules and for the End Module it is
+                            taken only once
+                            at the end
+                            of the module.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Do's</b></td>
+                    </tr>
+                    <tr>
+                        <td>1.Giving the module wise feedback is
+                            compulsory.</td>
+                    </tr>
+                    <tr>
+                        <td>2.You can log-in anytime anywhere as it
+                            is a web
+                            based application and give the feedback
+                            during the
+                            scheduled dates. Note: After the
+                            scheduled dates the
+                            feedback cannot be given.</td>
+                    </tr>
+                    <tr>
+                        <td>3.You should give the feedback
+                            independently,
+                            specifically on the aspects of teaching.</td>
+                    </tr>
+                    <tr>
+                        <td>4.Your Feedback is very important in
+                            order to
+                            improve the teaching quality and it will
+                            make the
+                            system robust, so do participate in the
+                            process.</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Dont's</b></td>
+                    </tr>
+                    <tr>
+                        <td>1. Do not give feedback under the
+                            influence of
+                            anybody or Institute</td>
+                    </tr>
+                    <tr>
+                        <td>2. Personal prejudices should not
+                            dictate the
+                            feedback. The system is in place to
+                            identify such
+                            cases.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- footer -->
+        <div id="footer" class="changeFont" style="text-align:
+            center;
+            margin-bottom: 0px ;">
+            2016 C-DAC © All Rights Reserved
+        </div>
+
+
+    </body>
+</html>

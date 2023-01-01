@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CDAC Feedback</title>
+        <script>
+            function signin(){
+                    let username=document.getElementById("uname").value;
+                    let password=document.getElementById("pass").value;
+                    let userset="0"
+                    let passset="0"
+                    let userset1="220941220051"
+                    let passset1="7020187672"
+                    let userset2="220941220177"
+                    let passset2="8975452238"
+                    let userset3="220941220181"
+                    let passset3="8390675706"
+                    let userset4="220941220036"
+                    let passset4="9689811685"
+                    let userset5="220941220000"
+                    let passset5="0000"
+
+                        if(username == userset1 && password == passset1){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                            window.open('/HomePage');
+                        }else if(username == userset2 && password == passset2){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                             window.open('/HomePage');
+                        }else if(username == userset3 && password == passset3){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                            window.open('/HomePage');
+                        }else if(username == userset4 && password == passset4){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                            window.open('/HomePage');
+                        }else if(username == userset5 && password == passset5){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                             window.open('/HomePage');
+                        }else if(username == userset && password == passset){
+                            // document.getElementById("emailnotification").innerHTML="Login Succesfully!";
+                            window.open('/HomePage');
+                            // <a href="/Feedback-HomePage"></a>
+                        }else{
+                            document.getElementById("emailnotification").innerHTML="Please Enter Valid Username and Password!";
+                            document.getElementById("uname").focus();
+                        }
+            }
+        </script>
+        <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #copyright{
+            color: dimgray;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: small;
+            margin-top: 100%;
+            border: 1px solid black;
+            height: 40px;
+            padding-top: 100px;
+        }
+        #middlefieldset{
+            border-radius: 10px;
+            border: 2px solid #C9C9C9;
+            padding: 10px;
+            padding-left: 80px; 
+            padding-right: 80px; 
+            width: 600px; 
+            text-align: center;  
+            margin-top: 65px;
+        }       
+        
+        #footer{ color: #5e616a;font-size: small;
+            border:.8px solid black; 
+            height: 39px; 
+            padding-top: 100px;
+            text-align: center;
+            font-weight: bold;
+        }   
+        #uname{background: url(/feedback_server/public/images/Username-icon.png) no-repeat;
+            background-color: white;
+            background-position: 5px;
+            width: 20px;
+            height: 20px;
+            padding-left: 25px;
+            border: 2px solid #ccc;
+            height: 35px;
+            width: 200px;
+        }
+        #pass{background: url(/feedback_server/public/images/password-icon.png) no-repeat;
+            background-color: white;
+            background-position: 5px;
+            width: 10px;
+            height: 29px;
+            padding-left: 25px;
+            border: 2px solid #ccc;
+            height: 35px;
+            width: 200px;
+        }
+        #signin{
+            /* background: url(/feedback_server/public/images/Sign-in-btn.png) no-repeat; */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.959), rgba(0, 0, 255, 0.938));
+            /* background-color: blue; */
+            text-align: center;
+            color: white;
+            font-size: larger;
+            border: 2px solid black;
+            /* padding-left: 20px; */
+            height: 52px;
+            width: 173px;
+            border-radius: 8px;
+            z-index: 10;
+        }
+        #list{
+            background: url(images/Username-icon.png) no-repeat;
+            background-color: white;
+            background-position: 5px;
+            width: 25px;
+            height: 25px;
+            padding-left: 25px;
+            border: 2px solid #ccc;
+            height: 40px;
+            width: 240px;
+        }
+        #emailnotification{ color: red;
+            font-size: large;
+            font-family: 'Segoe UI';
+            height: 15px; 
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        } 
+        /* #mem1:hover{
+            scale: 1.15;
+        } */
+        
+    </style>
+    </head>
+    <body style="background-color:#F0F0F0">
+        <!-- First Image -->
+        <img src="https://actsfeedback.cdac.in/feedbackSystem/images/Header.jpg"
+            id="head-img" width="100%">
+        <marquee behavior="" direction=""><h4 style="color: red;">Demo Website By Durgesh- Only For Educational
+                Purpose !! All rights reserved to © C-DAC</h4> </marquee>
+        <!-- Middle field -->
+        <!-- Email -->
+        <div id="emailnotification">
+        </div>
+        <table style="width: 150px" align="center" id="middlefieldset">
+            <!-- ID image -->
+            <tr>
+                <td align="center" id="mem1">
+                    <br>
+                    <img
+                        src="https://actsfeedback.cdac.in/feedbackSystem/images/member-login-icon.png;jsessionid=7ABD27D4CF396F7D2EE687EC5A93A79B"
+                        id="id" style="align-items: center;">
+                </td>
+            </tr>
+            <!-- Member login -->
+            <tr align="center"><td colspan="2" style="color:
+                    #5e616a;font-family: Calibri;font-size: 5;"> MEMBER LOGIN</td></tr>
+            <tr><td></td></tr>
+            <!-- Username Input -->
+            <tr align="center"><td><input type="text" id="uname"
+                        placeholder="Enter Username" required autofocus>
+                    <label for="uname"></label></td></tr>
+            <!-- password Input -->
+            <tr align="center"><td><input type="password" id="pass"
+                        placeholder="Enter Password" required>
+                    <label for="pass"></label></td></tr>
+            <!-- dropdown -->
+            <tr colspan="3"><td align="center">
+                    <select name="list" id="list">
+                        <option value="-1">Select Batch(Only For CC Use)</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- captcha -->
+            <tr>
+                <td align="center">
+                    <!-- capt Image -->
+                    <img
+                        src="https://actsfeedback.cdac.in/feedbackSystem/login/captcha"
+                        id="img-captcha" style="align-self:
+                        center; width: 90px;height: 35px;vertical-align:
+                        middle;">
+                    <!-- captcha input -->
+                    <input type="text" id="captcha" style=" border: 3px solid
+                        #ccc; width:120px; height: 30px;vertical-align:
+                        middle;align-self: center;">
+                </td>
+            </tr>
+            <!-- refresh link -->
+            <tr>
+                <td style="text-align: center;font-size: smaller;">
+                    <a href="#">Refresh</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please
+                    Enter text
+                </td>
+            </tr>
+            <!-- sign in button -->
+            <tr colspan="2">
+                <td align="center">
+                    <button type="submit" id="signin" onclick="signin()">Sign In</button>
+
+                        <!-- <button type="submit" id="signin" onclick="parent.open('https://actsfeedback.cdac.in/feedbackSystem/login/logmein')" ></button> -->
+                    </td>
+                </tr>
+                <!-- forgot pass linker -->
+                <tr>
+                    <td style="text-align: center;font-size: smaller;">
+                        <a
+                            href="/ForgotPass"
+                            target="_blank">Student
+                            Forgot password</a>
+                    </td>
+                </tr>
+            </table>
+            <!-- </div> -->
+            <br>
+            <div id="footer">
+                <a href="https://actsfeedback.cdac.in/feedbackSystem/"
+                    target="_blank">2015 C-DAC © All Rights Reserved</a>
+            </div>
+        </body>

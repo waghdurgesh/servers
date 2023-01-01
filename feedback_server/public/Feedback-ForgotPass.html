@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forgot Password</title>
+        <script>
+            function homepage(){
+                window.open("/");
+            }
+            function submitusername(){
+                    var username=document.getElementById("uname").value
+                    let userset1="220941220051"
+                    let userset2="220941220177"
+                    let userset3="220941220181"
+                    let userset4="220941220036"
+                    let userset5="220941220000"
+                    if(username != ""){
+                        if(username == userset1){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,1500);
+                        }else if(username == userset2){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,1500);
+                        }else if(username == userset3){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,1500);
+                        }else if(username == userset4){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,1500);
+                        }else if(username == userset5){
+                            document.getElementById("emailnotification").innerHTML="Email has sent on your Registered Email-ID!";
+                            setTimeout(homepage,1500);
+                        }else{
+                            document.getElementById("emailnotification").innerHTML="Please Enter Valid Username!";
+                            // document.getElementById("uname").focus();
+                        }
+                    }else{
+                        document.getElementById("emailnotification").innerHTML="Enter Your Username!";
+                        // document.getElementById("uname").focus();
+                    }
+            }
+        </script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #copyright{
+            color: dimgray;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: small;
+            margin-top: 100%;
+            border: 1px solid black;
+            height: 40px;
+            padding-top: 100px;
+        }
+        #middlefieldset{
+            border: 3px solid #3665C2;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px rgba(20,20,20,0.7);
+            padding: 10px;
+            padding-bottom: 40px;
+            padding-right: 160px;
+            padding-left: 20px; 
+            margin-top: 30px;
+            margin-bottom: 200px;
+        }       
+        
+        #footer{ color: red;
+            font-size: large;
+            border:.8px solid black; 
+            height: 39px; 
+            padding-top: 100px;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }   
+        #emailnotification{ color: red;
+            font-size: large;
+            height: 5px; 
+            padding-top: 10px;
+            text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        } 
+        #uname{
+            background-color: rgb(218, 248, 250);
+            border-radius: 5px;
+            width: 300px;
+            height: 35px;
+            border: 1px solid #ccc;
+            margin-left: 100px;
+            margin-top: 8px;
+        }
+        #submituname{
+            width: 200px;
+            padding: 10px 0;
+            border: 0px solid;
+            margin: 5px;
+            margin-left: 150px;
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            transition: 0.3s linear;
+            background: #999;
+            box-shadow: 2px 2px 2px rgba(20,20,20,0.7);
+        }
+        #submituname:hover{
+            background-color: rgb(0, 71, 177);
+        }
+        #uname:hover{
+            background-color: white;
+        }
+        #caption{
+            margin: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            font-weight: lighter;
+            text-shadow: 0.1px 0.1px 0.1px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body style="background-color:#F0F0F0">
+
+
+    <form id="form">
+    <!-- First Image -->
+    <img src="https://actsfeedback.cdac.in/feedbackSystem/images/Header.jpg" id="head-img" width="100%" >
+    <marquee behavior="" direction=""><h4 style="color: red;">Demo Website By Durgesh- Only For Educational
+        Purpose !! All rights reserved to © C-DAC</h4> </marquee>
+    <!-- Middle field -->
+    <br><br><br>
+            <table style="width: 150px" align="center" id="middlefieldset" >
+                <!-- </emailnotification> -->
+            <div id="emailnotification"></div>
+                <!-- Forgot Password Caption -->
+                <caption id="caption">Forgot Password</caption>
+                <!-- Username Input -->
+                <tr align="left"><td><label for="uname">UserName:</label></td>
+                    <td><input type="text" id="uname" ></td></tr>
+                <!-- </emailnotification> -->
+                <div id="error"></div>
+                <!-- sign in button -->
+                <tr>
+                    <td></td>
+                    <td><br>
+                    <button type="reset" id="submituname" onclick="submitusername()">
+                        <label for="submituname" id="btn-label" style="color:white; font-size:larger;text-align: left;font-family: 'Segoe UI';">Submit</label>
+                    </td>
+            </tr>
+            </table> 
+        <!-- </div> -->
+        <div id="footer" >
+        <a href="Feedback.html" target="_self">2015 C-DAC © All Rights Reserved</a>
+    </div>
+    </form>
