@@ -1,2 +1,0 @@
-# server
-For server test
